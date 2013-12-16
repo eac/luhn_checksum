@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    luhn (0.1.0)
+    luhn_checksum (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -12,5 +12,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  luhn!
+  luhn_checksum!
   minitest

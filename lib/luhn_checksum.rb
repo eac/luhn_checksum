@@ -1,4 +1,4 @@
-module Luhn
+module LuhnChecksum
 
   # Numeric ascii bytes to Luhn value
   ODD_LUHN_VALUE = {
