@@ -1,5 +1,7 @@
-module LuhnChecksum
+# frozen_string_literal: true
 
+# Test numeric sequences to see if they match Luhn checksum
+module LuhnChecksum
   # Numeric ascii bytes to Luhn value
   ODD_LUHN_VALUE = {
     48 => 0,
@@ -25,9 +27,8 @@ module LuhnChecksum
     54 => 3, # 6 * 2 - 9
     55 => 5, # etc ...
     56 => 7,
-    57 => 9,
+    57 => 9
   }.freeze
-
 
   def self.valid?(numbers)
     sum = 0
@@ -43,7 +44,6 @@ module LuhnChecksum
       end
     end
 
-    sum % 10 == 0
+    (sum % 10).zero?
   end
-
 end

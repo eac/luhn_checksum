@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/zendesk/luhn_checksum.png)](https://travis-ci.org/zendesk/luhn_checksum)
+![Build Status](https://github.com/zendesk/luhn_checksum/actions/workflows/ci.yml/badge.svg)
 
 luhn_checksum
 =============
