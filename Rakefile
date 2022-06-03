@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'bundler/gem_tasks'
+require 'bump/tasks'
 require 'appraisal'
 require 'rake/testtask'
 require 'rubocop/rake_task'
