@@ -15,6 +15,7 @@ Gem::Specification.new do |gem|
   gem.version       = '0.1.1'
 
   gem.add_development_dependency('appraisal')
+  gem.add_development_dependency('bump')
   gem.add_development_dependency('bundler')
   gem.add_development_dependency('rake')
 end
