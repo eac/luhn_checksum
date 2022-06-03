@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 require 'bundler/gem_tasks'
-
 require 'appraisal'
-
 require 'rake/testtask'
+require 'rubocop/rake_task'
+
+RuboCop::RakeTask.new
 
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
@@ -11,4 +14,4 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = false
 end
 
-task :default => :test
+task default: [:test, :rubocop]
